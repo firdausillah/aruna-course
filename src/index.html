@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/9e08c92931.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body class="font-roboto">
+    
+    <!-- begin navbar -->
+    <nav class="sticky top-0 py-5 text-teal-500 z-[1000] px-5 sm:px-20">
+        <div class="container flex flex-col items-center justify-between mx-auto sm:flex-row">
+            <div class="flex items-center justify-between w-full sm:w-auto">
+                <a href="#" class="text-2xl font-bold">Aruna <span class="text-gray-700">Course</span></a>
+    
+                <button onclick="menu()" class="block text-xl sm:hidden">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+    
+            <div class="fixed top-0 hidden w-full h-screen px-5 py-10 bg-teal-500 sm:h-auto sm:px-0 sm:py-0 sm:bg-transparent sm:static sm:flex sm:items-center sm:w-auto" id="menu-item">
+                <ul class="space-y-8 text-white sm:text-gray-700 sm:space-y-0 sm:flex sm:space-x-8">
+                    <li><a href="#" class="">Home</a></li>
+                    <li><a href="#" class="">About</a></li>
+                    <li><a href="#" class="">Services</a></li>
+                    <li><a href="#" class="">Contact</a></li>
+                </ul>
+                <span onclick="menu()" class="absolute text-xl text-white sm:hidden top-5 right-5">
+                    <i class="fa fa-times"></i>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    
+    <!-- begin hero -->
+    <section id="hero" class="min-h-[600px] -mt-24 bg-cover bg-no-repeat bg-[url('img/background.jpg')] flex align-middle">
+        <div class="container grid grid-cols-1 px-5 mx-auto mt-24 space-y-4 sm:px-20 sm:mt-0 sm:grid-cols-2">
+
+            <div class="relative self-end order-2 w-full mb-16 space-y-4 text-center text-gray-700 sm:text-left sm:order-1 sm:space-y-6">
+                <h1 class="text-2xl font-bold sm:text-4xl lg:text-5xl">Develope your skill in a new and unique way</h1>
+                <p class="text-xs lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae totam accusantium, atque dignissimos, nesciunt, culpa repudiandae officia nulla ducimus vel placeat unde! Non natus nesciunt atque corrupti nulla</p>
+                <button class="px-8 py-2 text-white bg-teal-500 rounded-md">Register</button>
+            </div>
+
+            <div class="relative grid order-1 w-full sm:order-2 justify-items-center">
+                <img src="img/person1.png" class="w-[450px] self-end" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- end hero -->
+
+    <!-- begin company -->
+    <section id="company" class="w-full h-full bg-teal-500 ">
+        <div class="container flex flex-wrap items-center justify-between h-full gap-3 p-5 mx-auto sm:px-20">
+            <img src="img/company1.png" class="w-[100px]" alt="">
+            <img src="img/company2.png" class="w-[100px]" alt="">
+            <img src="img/company3.png" class="w-[100px]" alt="">
+            <img src="img/company4.png" class="w-[100px]" alt="">
+            <img src="img/company5.png" class="w-[100px]" alt="">
+        </div>
+    </section>
+    <!-- end company -->
+
+    <!-- begin search-course -->
+    <section id="search-course" class="py-16 px-5 sm:px-20 bg-[#ECF4F3]">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-gray-700">Search Course</h1>
+            <div class="flex flex-wrap justify-center h-10 gap-2 mt-10 align-middle">
+                <input type="text" placeholder="Search for over 50+ courses" class="w-full px-6 py-1 border rounded-md shadow-lg md:w-1/2 focus:border-transparent focus:outline-none focus:ring-0">
+                <button class="w-full px-8 py-1 text-white align-middle bg-teal-500 rounded-md shadow-lg md:w-auto">search</button>
+            </div>
+
+        </div>
+        <div class="flex flex-col gap-8 mt-24 md:mt-12 md:flex-row">
+            <div class="flex items-center justify-center md:w-1/2">
+                <img src="img/people.png" class="" width="400px" alt="">
+            </div>
+            <div class="w-full text-gray-700 md:w-1/2">
+                <h4 class="mb-4 text-3xl font-bold">
+                    <span class="text-teal-500">Benefits</span> From Our Online <br>Learning
+                </h4>
+                <ul class="space-y-6 text-xs md:text-base">
+                    <li>
+                        <h6 class="text-lg font-bold">Online Degrees</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <h6 class="text-lg font-bold">Short Courses</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <h6 class="text-lg font-bold">Training From Expert</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <h6 class="text-lg font-bold">1.5k+ Video Courses</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- end search-course -->
+    
+    <!-- begin popular course -->
+    <section class="bg-gradient-to-br to-[#FDFAE3] from-10%  from-teal-500 to-90% py-16 px-5 sm:px-20 md:px-40">
+        <div class="relative mx-auto text-center text-white md:w-2/3">
+            <h1 class="text-4xl font-bold">Our Popular Course</h1>
+            <p class="mt-10">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo cupiditate sed distinctio minus tenetur architecto dolores velit odio assumenda molestiae, officia totam nihil temporibus, accusamus autem nulla provident earum praesentium.
+            </p>
+        </div>
+        <div class="flex flex-col w-full gap-4 mt-10 lg:flex-row">
+            <div class="p-2 overflow-hidden bg-white rounded-lg">
+                <img src="img/course1.png" class="w-full rounded-md aspect-3/2" alt="">
+                <div class="flex justify-between mt-2 text-[10px]">
+                    <div class="px-5 py-1 font-light bg-teal-100 rounded-md"><h5>Web Design</h5></div>
+                    <div class="flex items-center gap-1 px-2 py-1 text-white bg-teal-500 rounded-md"><i class="fa fa-star"></i><h5>4.5</h5></div>
+                </div>
+                <h5 class="w-1/2 mt-5 text-xl font-extrabold leading-tight">Web Design & Developement</h5>
+                <div class="flex gap-5 my-5 text-xs">
+                    <span class="flex items-center gap-2">
+                        <i class="text-teal-500 fa fa-book"></i>
+                        25 Courses
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="text-teal-500 fa fa-users"></i>
+                        125 Students
+                    </span>
+                </div>
+                <div class="border-t-[1px] py-1 text-sm flex justify-between">
+                    <h5 class="text-gray-700">$150.00</h5>
+                    <span class="text-teal-500">
+                        <i class="fa fa-user"></i>
+                        Alex Taylor
+                    </span>
+                </div>
+            </div>
+            <div class="p-2 overflow-hidden bg-white rounded-lg">
+                <img src="img/course2.png" class="w-full rounded-md aspect-3/2" alt="">
+                <div class="flex justify-between mt-2 text-[10px]">
+                    <div class="px-5 py-1 font-light bg-teal-100 rounded-md"><h5>Web Design</h5></div>
+                    <div class="flex items-center gap-1 px-2 py-1 text-white bg-teal-500 rounded-md"><i class="fa fa-star"></i><h5>4.5</h5></div>
+                </div>
+                <h5 class="w-1/2 mt-5 text-xl font-extrabold leading-tight">Wireframing & Protoyping</h5>
+                <div class="flex gap-5 my-5 text-xs">
+                    <span class="flex items-center gap-2">
+                        <i class="text-teal-500 fa fa-book"></i>
+                        12 Courses
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="text-teal-500 fa fa-users"></i>
+                        86 Students
+                    </span>
+                </div>
+                <div class="border-t-[1px] py-1 text-sm flex justify-between">
+                    <h5 class="text-gray-700">$125.00</h5>
+                    <span class="text-teal-500">
+                        <i class="fa fa-user"></i>
+                        Judd Brown
+                    </span>
+                </div>
+            </div>
+            <div class="p-2 overflow-hidden bg-white rounded-lg">
+                <img src="img/course3.png" class="w-full rounded-md aspect-3/2" alt="">
+                <div class="flex justify-between mt-2 text-[10px]">
+                    <div class="px-5 py-1 font-light bg-teal-100 rounded-md"><h5>Web Design</h5></div>
+                    <div class="flex items-center gap-1 px-2 py-1 text-white bg-teal-500 rounded-md"><i class="fa fa-star"></i><h5>4.5</h5></div>
+                </div>
+                <h5 class="w-1/2 mt-5 text-xl font-extrabold leading-tight">Phyton for data science</h5>
+                <div class="flex gap-5 my-5 text-xs">
+                    <span class="flex items-center gap-2">
+                        <i class="text-teal-500 fa fa-book"></i>
+                        27 Courses
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="text-teal-500 fa fa-users"></i>
+                        211 Students
+                    </span>
+                </div>
+                <div class="border-t-[1px] py-1 text-sm flex justify-between">
+                    <h5 class="text-gray-700">$310.00</h5>
+                    <span class="text-teal-500">
+                        <i class="fa fa-user"></i>
+                        Allan Turing
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- end popular course -->
+    
+    <!-- begin recruitment -->
+    <section id="recruitment" class="py-16 px-5 sm:px-20 bg-[#ECF4F3]">
+        <div class="flex flex-col gap-8 md:flex-row">
+            <div class="w-full space-y-5 text-gray-700  md:w-1/2">
+                <h4 class="text-3xl font-bold">
+                    If You Are A Certified Teache <br>Then <span class="text-teal-500">Become An Instructor</span>
+                </h4>
+                <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo cupiditate sed distinctio minus tenetur architecto
+                    dolores velit odio assumenda molestiae, officia totam nihil temporibus, accusamus autem nulla provident.
+                </p>
+                <h4 class="text-3xl font-bold ">
+                    Enjoy many perks
+                </h4>
+                <div class="flex gap-5 text-xs font-semibold sm:gap-10 md:text-base">
+                    <ul class="space-y-2 list-disc">
+                        <li>Global impact</li>
+                        <li>Flexible schedule</li>
+                        <li>Innovative teaching tools</li>
+                        <li>Recognition and Reputation</li>
+                    </ul>
+                    <ul class="space-y-2 list-disc">
+                        <li>Creative freedom</li>
+                        <li>Monetize your expertize</li>
+                        <li>Profesional developement</li>
+                        <li>Networking oportunities</li>
+                    </ul>
+                </div>
+                <button class="px-8 py-2 text-white bg-teal-500 rounded-md">Become an instructor</button>
+            </div>
+            <div class="flex items-center justify-center md:w-1/2">
+                <img src="img/person2.png" class="" width="300px" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- end recruitment -->
+</body>
+
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('nav').addClass('bg-white/80');
+            } else {
+                $('nav').removeClass('bg-white/80');
+            }
+        });
+    });
+    function menu(){
+        $('#menu-item').toggleClass('hidden'); 
+    }
+
+    
+    
+</script>
+
+</html>
